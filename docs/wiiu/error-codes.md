@@ -16,8 +16,12 @@ title: Wii U Error Codes
 | 106-XXXX    | [NEX (game servers)](#nex-error-codes)<br>[Error descriptions](#nex-error-descriptions) |
 | 107-XXXX    | [eShop (api)](#eshop-errors-api)                                                        |
 | 111-XXXX    | [eShop (website)](#eshop-errors-website)                                                |
+| 112-XXXX    | Surf (Wii U Internet Browser)                                                           |
+| 114-XXXX    | wagonU (Software/Data Transfer)
 | 115-XXXX    | OLV (miiverse)                                                                          |
 | 118-XXXX    | PIA (peer to peer)                                                                      |
+| 119-XXXX    | Vino (Nintendo TVii)                                                                    |
+| 123-XXXX    | mintU (AOC Overlay App)                                                                 |
 | 124-XXXX    | EC (e-commerce)                                                                         |
 | 150-XXXX    | FS (file system)                                                                        |
 | 151-XXXX    | KPAD (wiimote)                                                                          |
@@ -27,6 +31,7 @@ title: Wii U Error Codes
 | 165-XXXX    | VPAD (gamepad)                                                                          |
 | 166-XXXX    | AOC (add-on content)                                                                    |
 | 168-XXXX    | NFP (amiibo)                                                                            |
+| 170-XXXX    | Softlock/Crash                                                                          |
 
 ## FP Error Codes
 
@@ -776,3 +781,85 @@ title: Wii U Error Codes
 | 111-9002   | UNDER_MAINTENANCE |
 | 111-9003   | SERVICE_FINISHED  |
 | 111-9100   | INVALID_TEMPLATE  |
+
+## PIA Errors
+
+| Error code | Name                                              |
+|------------|---------------------------------------------------|
+| 118-0000   | ResultNexInternalError                            |
+| 118-0001   | ResultAllocationFailed                            |
+| 118-0002   | ResultAlreadyInitialized                          |
+| 118-0003   | ResultBufferShortage                              |
+| 118-0004   | ResultBrokenData                                  |
+| 118-0005   | ResultCancelled                                   |
+| 118-0006   | ResultNetworkConnectionIsLost                     |
+| 118-0007   | ResultInvalidArgument                             |
+| 118-0008   | ResultInvalidState                                |
+| 118-0009   | ResultNoData                                      |
+| 118-0010   | ResultNotFound                                    |
+| 118-0011   | ResultNotImplemented                              |
+| 118-0012   | ResultNotInitialized                              |
+| 118-0013   | ResultBufferIsFull                                |
+| 118-0014   | ResultTimeOut                                     |
+| 118-0015   | ResultAlreadyExists                               |
+| 118-0016   | ResultContainerIsFull                             |
+| 118-0017   | ResultTemporaryUnavailable                        |
+| 118-0018   | ResultInProgress                                  |
+| 118-0019   | ResultNotSet                                      |
+| 118-0101   | ResultMemoryLeak                                  |
+| 118-0201   | ResultNatCheckFailed                              |
+| 118-0202   | ResultInUse                                       |
+| 118-0203   | ResultDnsFailed                                   |
+| 118-0301   | ResultNotFoundNetwork                             |
+| 118-0302   | ResultInvalidNode                                 |
+| 118-0303   | ResultNothingPacket                               |
+| 118-0304   | ResultNegligibleFault                             |
+| 118-0305   | ResultInvalidConnection                           |
+| 118-0306   | ResultHostMigrationFailure                        |
+| 118-0307   | ResultDifferentVersion                            |
+| 118-0308   | ResultErrorOccurred                               |
+| 118-0309   | ResultInvalidNetwork                              |
+| 118-0310   | ResultNetworkIsFull                               |
+| 118-0401   | ResultConnectionFailed                            |
+| 118-0402   | ResultCreateStationFailed                         |
+| 118-0403   | ResultIncompatibleFormat                          |
+| 118-0404   | ResultNotInCommunication                          |
+| 118-0405   | ResultTableIsFull                                 |
+| 118-0501   | ResultJoinRequestDenied                           |
+| 118-0502   | ResultStationConnectionFailed                     |
+| 118-0503   | ResultMessageNotHandled                           |
+| 118-0504   | ResultFailedCreateProtocal                        |
+| 118-0505   | ResultFailedStartupProtocal                       |
+| 118-0506   | ResultMeshIsFull                                  |
+| 118-0507   | ResultInvalidSystemMessage                        |
+| 118-0510   | ResultStationConnectionNatTraversalFailedUnknown  |
+| 118-0511   | ResultStationConnectionNatTraversalFailedEim      |
+| 118-0512   | ResultStationConnectionNatTraversalFailedEdm      |
+| 118-0513   | ResultNatTraversalFailedBothEim                   |
+| 118-0514   | ResultNatTraversalFailedBothEdm                   |
+| 118-0515   | ResultNatTraversalFailedLocalEimRemoteEdm         |
+| 118-0516   | ResultNatTraversalFailedLocalEdmRemoteEim         |
+| 118-0517   | ResultRelayFailedNoCandidate                      |
+| 118-0518   | ResultRelayFailedRttLimit                         |
+| 118-0519   | ResultRelayFailedRelayNumLimit                    |
+| 118-0520   | ResultRelayFailedUnknown                          |
+| 118-0521   | ResultNatTraversalRequestTimeout                  |
+| 118-0541   | ResultSessionIsNotFound                           |
+| 118-0542   | ResultMatchmakeSessionIsFull                      |
+| 118-0543   | ResultDeniedByParticipants                        |
+| 118-0544   | ResultParticipantInBlackList                      |
+| 118-0545   | ResultSessionUserPasswordUnmatch                  |
+| 118-0546   | ResultSessionSystemPasswordUnmatch                |
+| 118-0547   | ResultMeshConnectionIsLost                        |
+| 118-0548   | ResultSessionIsClosed                             |
+| 118-0549   | ResultCompanionStationIsOffline                   |
+| 118-0550   | ResultHostIsNotFriend                             |
+| 118-0551   | ResultSessionConnectionIsLost                     |
+| 118-0552   | ResultCompanionStationIsLeft                      |
+| 118-0553   | ResultCompanionStationDenied                      |
+| 118-0554   | ResultSessionMigrationFailed                      |
+| 118-0561   | ResultGameServerMaintenance                       |
+| 118-0562   | ResultGameServerProcessAborted                    |
+| 118-0602   | ResultDataIsNotArrivedYet                         |
+| 118-0606   | ResultDataIsNotSet                                |
+| 118-0801   | ResultInvalidTiming                               |
