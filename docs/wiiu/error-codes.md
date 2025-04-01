@@ -17,7 +17,7 @@ title: Wii U Error Codes
 | 107-XXXX    | [eShop (api)](#eshop-errors-api)                                                        |
 | 111-XXXX    | [eShop (website)](#eshop-errors-website)                                                |
 | 112-XXXX    | Surf (Wii U Internet Browser)                                                           |
-| 114-XXXX    | wagonU (Software/Data Transfer)
+| 114-XXXX    | wagonU (Software/Data Transfer)                                                         |
 | 115-XXXX    | OLV (miiverse)                                                                          |
 | 118-XXXX    | PIA (peer to peer)                                                                      |
 | 119-XXXX    | Vino (Nintendo TVii)                                                                    |
