@@ -8,12 +8,12 @@ title: Wii U Error Codes
 
 | Error Codes | Description                                                                             |
 |-------------|-----------------------------------------------------------------------------------------|
-| 101-XXXX    | [FP (friends)](#fp-error-codes)                                                         |
-| 102-XXXX    | [ACT (accounts)](#act-error-codes)                                                      |
-| 103-XXXX    | AC (internet connection)                                                                |
-| 104-XXXX    | BOSS (spotpass)                                                                         |
-| 105-XXXX    | NIM (title installation)                                                                |
-| 106-XXXX    | [NEX (game servers)](#nex-error-codes)<br>[Error descriptions](#nex-error-descriptions) |
+| 101-XXXX    | [FP (Friends Presence)](#fp-error-codes)                                                |
+| 102-XXXX    | [ACT (Accounts)](#act-error-codes)                                                      |
+| 103-XXXX    | AC (Auto Connect - Internet Connection)                                                 |
+| 104-XXXX    | BOSS (SpotPass)                                                                         |
+| 105-XXXX    | NIM (Nintendo Installation Management)                                                  |
+| 106-XXXX    | [NEX (Network Extension - Game servers/Matchmaking)](#nex-error-codes)<br>[Error descriptions](#nex-error-descriptions) |
 | 107-XXXX    | [eShop (api)](#eshop-errors-api)                                                        |
 | 111-XXXX    | [eShop (website)](#eshop-errors-website)                                                |
 | 112-XXXX    | Surf (Wii U Internet Browser)                                                           |
@@ -22,16 +22,17 @@ title: Wii U Error Codes
 | 118-XXXX    | PIA (peer to peer)                                                                      |
 | 119-XXXX    | Vino (Nintendo TVii)                                                                    |
 | 123-XXXX    | mintU (AOC Overlay App)                                                                 |
-| 124-XXXX    | EC (e-commerce)                                                                         |
-| 150-XXXX    | FS (file system)                                                                        |
-| 151-XXXX    | KPAD (wiimote)                                                                          |
+| 124-XXXX    | EC (E-Commerce)                                                                         |
+| 150-XXXX    | FS (File System)                                                                        |
+| 151-XXXX    | KPAD (Wii Accessories)                                                                  |
 | 155-XXXX    | SAVE (save files)                                                                       |
-| 160-XXXX    | System error                                                                            |
-| 162-XXXX    | MCP (title management)                                                                  |
-| 165-XXXX    | VPAD (gamepad)                                                                          |
-| 166-XXXX    | AOC (add-on content)                                                                    |
-| 168-XXXX    | NFP (amiibo)                                                                            |
+| 160-XXXX    | ACP and IOSU                                                                            |
+| 162-XXXX    | MCP (Memory Control Processor)                                                          |
+| 165-XXXX    | VPAD (Wii U GamePad)                                                                    |
+| 166-XXXX    | AOC (Add-on Content)                                                                    |
+| 168-XXXX    | NFP (Nintendo Figurine Platform - amiibo)                                               |
 | 170-XXXX    | Softlock/Crash                                                                          |
+| 199-XXXX    | Miscellaneous                                                                           |
 
 ## FP Error Codes
 
@@ -863,3 +864,35 @@ title: Wii U Error Codes
 | 118-0602   | ResultDataIsNotArrivedYet                         |
 | 118-0606   | ResultDataIsNotSet                                |
 | 118-0801   | ResultInvalidTiming                               |
+
+## ACP & IOSU Errors (Module 160)
+
+| Error code | Name                                              |
+|------------|---------------------------------------------------|
+| 160-0101   | Unknown System Error                              |
+| 160-0102   | Volume Error                                      |
+| 160-0103   | MLC Error                                         |
+| 160-0104   | SLC Error                                         |
+| 160-0105   | USB Device Error                                  |
+| 160-0106   | ACP_STATUS_USB_MEDIA_NOTREADY                     |
+| 160-0107   | ODD_MEDIA_NOT_READY                               |
+| 160-1400   | ODD/ODM Error                                     |
+| 160-1401   | ODM_STATE_HARD_FATAL                              |
+| 160-1402   | ODM_STATE_INVALID_DRIVE                           |
+| 160-2713   | USB_MEDIA_NOTREADY                                |
+| 160-1709   | SLC_DATA_CORRUPTED                                |
+| 160-1710   | MLC_DATA_CORRUPTED                                |
+| 160-4711   | USB_DATA_CORRUPTED                                |
+| 160-4712   | DATA_CORRUPTED                                    |
+| 160-4714   | USB_MEDIA_BROKEN                                  |
+
+## OLV Errors (Pretendo Network)
+
+| Error code | Name                                              |
+|------------|---------------------------------------------------|
+| 115-5004   | SERVICE_CLOSED                                    |
+| 115-5007   | DUPLICATE_POST & PNID_PERM_BAN                    |
+| 115-5008   | PNID_POST_BAN                                     |
+| 115-5015   | NO_TOKEN                                          |
+| 115-5016   | BAD_TOKEN                                         |
+| 115-5110   | COMMUNITY_ERROR                                   |
